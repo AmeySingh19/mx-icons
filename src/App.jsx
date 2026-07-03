@@ -80,10 +80,10 @@ function getAnimationClass(slug) {
   ) {
     return "bounce-x";
   }
-  if (s.includes("copy") || s.includes("document") || s.includes("layer")) {
+  if (s.includes("copy") || s.includes("layer")) {
     return "copy";
   }
-  if (s.includes("trash") || s.includes("delete")) {
+  if (s === "trash" || s.startsWith("trash-") || s === "trush-square") {
     return "trash";
   }
   return "scale";
